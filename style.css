@@ -59,6 +59,7 @@ Nav Section
 .nav__row{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav__logo--wrapper{
@@ -82,7 +83,7 @@ Nav Section
     font-family: 'Inter', system-ui;
 }
 
-.nav__links{
+#nav__links{
     display: flex;
     align-items: center;
     padding-bottom: 2px;
@@ -94,7 +95,7 @@ Nav Section
     text-decoration: underline;
 }
 
-.nav__link--login{
+.nav__link:nth-child(5){
     margin-left: 48px;
     margin-right: 24px;
 }
@@ -127,6 +128,10 @@ Nav Section
     width: auto;
     transition: all 300ms ease;
     color: white;
+}
+
+#nav__links{
+    list-style: none;
 }
 
 /* 
@@ -977,6 +982,76 @@ Testimonials section
     
 */
 
+/* small screeens hamburger menu (900px) */
+@media (max-width: 900px) {
+
+    #nav__links{
+        width: 100%;
+        max-width: 1200px;
+        position: fixed;
+        top: 40px;
+        right: -550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .2s ease-in-out;
+    }
+
+    #nav__links.active{
+        right: 0;
+        top: 40px;
+        border: 1px solid lightgray;
+        gap: 16px;
+        background-color: white;
+        width: 87%;
+        right: 50px;
+        padding: 48px 16px 16px 16px;
+    }
+
+    #hamburger{
+        height: 50px;
+        width: 50px;
+        position: relative;
+        margin-top: 0;
+        margin-right: 16px;
+        cursor: pointer;
+    }
+    
+    #hamburger span{
+        height: 5px;
+        width: 100%;
+        background-color: black;
+        border-radius: 25px;
+        position: absolute;
+        transition: .3s ease;
+    }
+
+    #hamburger span:nth-child(1){
+        top: 25%;
+    }
+    #hamburger span:nth-child(2){
+        top: 50%;
+    }
+    #hamburger span:nth-child(3){
+        top: 75%;
+    }
+
+    #hamburger.active span:nth-child(1){
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    #hamburger.active span:nth-child(2){
+        opacity: 0;
+    }
+    #hamburger.active span:nth-child(3){
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+} 
+
+
+
 /* Medium screens (1225px) */
 @media (max-width: 1225px) and (min-width: 768px) {
 
@@ -1054,10 +1129,6 @@ Testimonials section
     padding: 32px 0;
   }
 
-  .nav__row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
   .nav__links {
     flex-direction: column;

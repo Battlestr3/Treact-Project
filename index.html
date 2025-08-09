@@ -9,24 +9,29 @@
 </head>
 <body>
     <section id="landing">
-        <nav>
             <div class="row">
                 <div class="nav__row">
                     <div class="nav__logo--wrapper">
                         <img src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="" class="nav__logo--img">
                         <div class="nav__logo--header">Treact</div>
                     </div>
-                    <div class="nav__links">
-                        <a href="#" class="nav__link">About</a>
-                        <a href="#" class="nav__link">Blog</a>
-                        <a href="#" class="nav__link">Pricing</a>
-                        <a href="#" class="nav__link">Contact Us</a>
-                        <a href="#" class="nav__link--login">Login</a>
-                        <button class="btn">Sign Up</button>
+                    <div class="nav__menu">
+                        <ul id="nav__links">
+                            <li><a href="#" class="nav__link">About</a></li>
+                            <li><a href="#" class="nav__link">Blog</a></li>
+                            <li><a href="#" class="nav__link">Pricing</a></li>
+                            <li><a href="#" class="nav__link">Contact Us</a></li>
+                            <li><a href="#" class="nav__link">Login</a></li>
+                            <li><button class="btn">Sign Up</button></li>
+                        </ul>
+                        <div id="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </nav>
     </section>
     <section id="home">
         <div class="container">
@@ -409,5 +414,6 @@
             </div>
         </div>
     </section>
+<script src="./script.js"></script>
 </body>
 </html>
