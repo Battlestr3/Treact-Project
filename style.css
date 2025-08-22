@@ -706,11 +706,11 @@ Testimonials section
 }
 
 .testimonials__container__description{
-    width: 100%;
+    width: 50%;
 }
 
 .testimonials__container--img{
-    width: 100%;
+    width: 50%;
 }
 
 .testimonials__container__description{
@@ -1312,6 +1312,14 @@ Testimonials section
   }
 
   .steps__container__img--wrapper{
+    width: 100%;
+  }
+
+  .quality__work__description__img--wrapper{
+    width: 100%;
+  }
+
+  .steps__container__img--wrapper{
     justify-content: center;
     align-items: center;
   }
@@ -1319,6 +1327,10 @@ Testimonials section
   .steps__container--img{
     max-width: 512px;
     margin-bottom: 32px;
+  }
+  
+  .testimonials__container--img{
+    width: 100%;
   }
   
   .steps__container__text--wrapper{
@@ -1465,8 +1477,13 @@ Testimonials section
         margin-bottom: 16px;
     }
 
+    .valve__lists{
+        margin: 0;
+    }
+
     .valve__list{
         margin: 16px 0;
+        width: 100%;
     }
 
     .plan__btn{
